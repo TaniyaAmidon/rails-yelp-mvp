@@ -18,3 +18,9 @@
   <%= @restaurant.category %>
 </p>
 
+<ul>
+  <% @restaurant.reviews.each do |r| %>
+    <li><%= r.content %></li>
+    <li><%= r.rating %></li>
+  <% end %>
+</ul>
